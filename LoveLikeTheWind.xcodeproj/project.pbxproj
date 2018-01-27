@@ -8,15 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		0DC0F161201C26E700326ECC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC0F160201C26E700326ECC /* AppDelegate.swift */; };
-		0DC0F163201C26E700326ECC /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0DC0F162201C26E700326ECC /* GameScene.sks */; };
-		0DC0F165201C26E700326ECC /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0DC0F164201C26E700326ECC /* Actions.sks */; };
 		0DC0F167201C26E700326ECC /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC0F166201C26E700326ECC /* GameScene.swift */; };
 		0DC0F169201C26E700326ECC /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC0F168201C26E700326ECC /* GameViewController.swift */; };
 		0DC0F16C201C26E700326ECC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DC0F16A201C26E700326ECC /* Main.storyboard */; };
 		0DC0F16E201C26E700326ECC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DC0F16D201C26E700326ECC /* Assets.xcassets */; };
 		0DC0F171201C26E700326ECC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DC0F16F201C26E700326ECC /* LaunchScreen.storyboard */; };
-		0DC0F17C201C26E700326ECC /* GameJam2018Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC0F17B201C26E700326ECC /* GameJam2018Tests.swift */; };
-		0DC0F187201C26E700326ECC /* GameJam2018UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC0F186201C26E700326ECC /* GameJam2018UITests.swift */; };
+		0DC0F17C201C26E700326ECC /* LoveLikeTheWindTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC0F17B201C26E700326ECC /* LoveLikeTheWindTests.swift */; };
+		0DC0F187201C26E700326ECC /* LoveLikeTheWindUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC0F186201C26E700326ECC /* LoveLikeTheWindUITests.swift */; };
+		0DC0F195201D0E5A00326ECC /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 0DC0F194201D0E5A00326ECC /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,34 +24,33 @@
 			containerPortal = 0DC0F155201C26E700326ECC /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 0DC0F15C201C26E700326ECC;
-			remoteInfo = GameJam2018;
+			remoteInfo = LoveLikeTheWind;
 		};
 		0DC0F183201C26E700326ECC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0DC0F155201C26E700326ECC /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 0DC0F15C201C26E700326ECC;
-			remoteInfo = GameJam2018;
+			remoteInfo = LoveLikeTheWind;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0DC0F15D201C26E700326ECC /* GameJam2018.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameJam2018.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DC0F15D201C26E700326ECC /* LoveLikeTheWind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoveLikeTheWind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DC0F160201C26E700326ECC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0DC0F162201C26E700326ECC /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		0DC0F164201C26E700326ECC /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		0DC0F166201C26E700326ECC /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		0DC0F168201C26E700326ECC /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		0DC0F16B201C26E700326ECC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0DC0F16D201C26E700326ECC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0DC0F170201C26E700326ECC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0DC0F172201C26E700326ECC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0DC0F177201C26E700326ECC /* GameJam2018Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameJam2018Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0DC0F17B201C26E700326ECC /* GameJam2018Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameJam2018Tests.swift; sourceTree = "<group>"; };
+		0DC0F177201C26E700326ECC /* LoveLikeTheWindTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoveLikeTheWindTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DC0F17B201C26E700326ECC /* LoveLikeTheWindTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoveLikeTheWindTests.swift; sourceTree = "<group>"; };
 		0DC0F17D201C26E700326ECC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0DC0F182201C26E700326ECC /* GameJam2018UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameJam2018UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0DC0F186201C26E700326ECC /* GameJam2018UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameJam2018UITests.swift; sourceTree = "<group>"; };
+		0DC0F182201C26E700326ECC /* LoveLikeTheWindUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoveLikeTheWindUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DC0F186201C26E700326ECC /* LoveLikeTheWindUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoveLikeTheWindUITests.swift; sourceTree = "<group>"; };
 		0DC0F188201C26E700326ECC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DC0F194201D0E5A00326ECC /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,9 +81,10 @@
 		0DC0F154201C26E700326ECC = {
 			isa = PBXGroup;
 			children = (
-				0DC0F15F201C26E700326ECC /* GameJam2018 */,
-				0DC0F17A201C26E700326ECC /* GameJam2018Tests */,
-				0DC0F185201C26E700326ECC /* GameJam2018UITests */,
+				0DC0F194201D0E5A00326ECC /* .gitignore */,
+				0DC0F15F201C26E700326ECC /* LoveLikeTheWind */,
+				0DC0F17A201C26E700326ECC /* LoveLikeTheWindTests */,
+				0DC0F185201C26E700326ECC /* LoveLikeTheWindUITests */,
 				0DC0F15E201C26E700326ECC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -93,19 +92,17 @@
 		0DC0F15E201C26E700326ECC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0DC0F15D201C26E700326ECC /* GameJam2018.app */,
-				0DC0F177201C26E700326ECC /* GameJam2018Tests.xctest */,
-				0DC0F182201C26E700326ECC /* GameJam2018UITests.xctest */,
+				0DC0F15D201C26E700326ECC /* LoveLikeTheWind.app */,
+				0DC0F177201C26E700326ECC /* LoveLikeTheWindTests.xctest */,
+				0DC0F182201C26E700326ECC /* LoveLikeTheWindUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0DC0F15F201C26E700326ECC /* GameJam2018 */ = {
+		0DC0F15F201C26E700326ECC /* LoveLikeTheWind */ = {
 			isa = PBXGroup;
 			children = (
 				0DC0F160201C26E700326ECC /* AppDelegate.swift */,
-				0DC0F162201C26E700326ECC /* GameScene.sks */,
-				0DC0F164201C26E700326ECC /* Actions.sks */,
 				0DC0F166201C26E700326ECC /* GameScene.swift */,
 				0DC0F168201C26E700326ECC /* GameViewController.swift */,
 				0DC0F16A201C26E700326ECC /* Main.storyboard */,
@@ -113,33 +110,33 @@
 				0DC0F16F201C26E700326ECC /* LaunchScreen.storyboard */,
 				0DC0F172201C26E700326ECC /* Info.plist */,
 			);
-			path = GameJam2018;
+			path = LoveLikeTheWind;
 			sourceTree = "<group>";
 		};
-		0DC0F17A201C26E700326ECC /* GameJam2018Tests */ = {
+		0DC0F17A201C26E700326ECC /* LoveLikeTheWindTests */ = {
 			isa = PBXGroup;
 			children = (
-				0DC0F17B201C26E700326ECC /* GameJam2018Tests.swift */,
+				0DC0F17B201C26E700326ECC /* LoveLikeTheWindTests.swift */,
 				0DC0F17D201C26E700326ECC /* Info.plist */,
 			);
-			path = GameJam2018Tests;
+			path = LoveLikeTheWindTests;
 			sourceTree = "<group>";
 		};
-		0DC0F185201C26E700326ECC /* GameJam2018UITests */ = {
+		0DC0F185201C26E700326ECC /* LoveLikeTheWindUITests */ = {
 			isa = PBXGroup;
 			children = (
-				0DC0F186201C26E700326ECC /* GameJam2018UITests.swift */,
+				0DC0F186201C26E700326ECC /* LoveLikeTheWindUITests.swift */,
 				0DC0F188201C26E700326ECC /* Info.plist */,
 			);
-			path = GameJam2018UITests;
+			path = LoveLikeTheWindUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0DC0F15C201C26E700326ECC /* GameJam2018 */ = {
+		0DC0F15C201C26E700326ECC /* LoveLikeTheWind */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0DC0F18B201C26E700326ECC /* Build configuration list for PBXNativeTarget "GameJam2018" */;
+			buildConfigurationList = 0DC0F18B201C26E700326ECC /* Build configuration list for PBXNativeTarget "LoveLikeTheWind" */;
 			buildPhases = (
 				0DC0F159201C26E700326ECC /* Sources */,
 				0DC0F15A201C26E700326ECC /* Frameworks */,
@@ -149,14 +146,14 @@
 			);
 			dependencies = (
 			);
-			name = GameJam2018;
-			productName = GameJam2018;
-			productReference = 0DC0F15D201C26E700326ECC /* GameJam2018.app */;
+			name = LoveLikeTheWind;
+			productName = LoveLikeTheWind;
+			productReference = 0DC0F15D201C26E700326ECC /* LoveLikeTheWind.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0DC0F176201C26E700326ECC /* GameJam2018Tests */ = {
+		0DC0F176201C26E700326ECC /* LoveLikeTheWindTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0DC0F18E201C26E700326ECC /* Build configuration list for PBXNativeTarget "GameJam2018Tests" */;
+			buildConfigurationList = 0DC0F18E201C26E700326ECC /* Build configuration list for PBXNativeTarget "LoveLikeTheWindTests" */;
 			buildPhases = (
 				0DC0F173201C26E700326ECC /* Sources */,
 				0DC0F174201C26E700326ECC /* Frameworks */,
@@ -167,14 +164,14 @@
 			dependencies = (
 				0DC0F179201C26E700326ECC /* PBXTargetDependency */,
 			);
-			name = GameJam2018Tests;
-			productName = GameJam2018Tests;
-			productReference = 0DC0F177201C26E700326ECC /* GameJam2018Tests.xctest */;
+			name = LoveLikeTheWindTests;
+			productName = LoveLikeTheWindTests;
+			productReference = 0DC0F177201C26E700326ECC /* LoveLikeTheWindTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		0DC0F181201C26E700326ECC /* GameJam2018UITests */ = {
+		0DC0F181201C26E700326ECC /* LoveLikeTheWindUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0DC0F191201C26E700326ECC /* Build configuration list for PBXNativeTarget "GameJam2018UITests" */;
+			buildConfigurationList = 0DC0F191201C26E700326ECC /* Build configuration list for PBXNativeTarget "LoveLikeTheWindUITests" */;
 			buildPhases = (
 				0DC0F17E201C26E700326ECC /* Sources */,
 				0DC0F17F201C26E700326ECC /* Frameworks */,
@@ -185,9 +182,9 @@
 			dependencies = (
 				0DC0F184201C26E700326ECC /* PBXTargetDependency */,
 			);
-			name = GameJam2018UITests;
-			productName = GameJam2018UITests;
-			productReference = 0DC0F182201C26E700326ECC /* GameJam2018UITests.xctest */;
+			name = LoveLikeTheWindUITests;
+			productName = LoveLikeTheWindUITests;
+			productReference = 0DC0F182201C26E700326ECC /* LoveLikeTheWindUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -216,7 +213,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0DC0F158201C26E700326ECC /* Build configuration list for PBXProject "GameJam2018" */;
+			buildConfigurationList = 0DC0F158201C26E700326ECC /* Build configuration list for PBXProject "LoveLikeTheWind" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -229,9 +226,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0DC0F15C201C26E700326ECC /* GameJam2018 */,
-				0DC0F176201C26E700326ECC /* GameJam2018Tests */,
-				0DC0F181201C26E700326ECC /* GameJam2018UITests */,
+				0DC0F15C201C26E700326ECC /* LoveLikeTheWind */,
+				0DC0F176201C26E700326ECC /* LoveLikeTheWindTests */,
+				0DC0F181201C26E700326ECC /* LoveLikeTheWindUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -241,11 +238,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DC0F195201D0E5A00326ECC /* .gitignore in Resources */,
 				0DC0F16C201C26E700326ECC /* Main.storyboard in Resources */,
-				0DC0F163201C26E700326ECC /* GameScene.sks in Resources */,
 				0DC0F16E201C26E700326ECC /* Assets.xcassets in Resources */,
 				0DC0F171201C26E700326ECC /* LaunchScreen.storyboard in Resources */,
-				0DC0F165201C26E700326ECC /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DC0F17C201C26E700326ECC /* GameJam2018Tests.swift in Sources */,
+				0DC0F17C201C26E700326ECC /* LoveLikeTheWindTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DC0F187201C26E700326ECC /* GameJam2018UITests.swift in Sources */,
+				0DC0F187201C26E700326ECC /* LoveLikeTheWindUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,12 +293,12 @@
 /* Begin PBXTargetDependency section */
 		0DC0F179201C26E700326ECC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0DC0F15C201C26E700326ECC /* GameJam2018 */;
+			target = 0DC0F15C201C26E700326ECC /* LoveLikeTheWind */;
 			targetProxy = 0DC0F178201C26E700326ECC /* PBXContainerItemProxy */;
 		};
 		0DC0F184201C26E700326ECC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0DC0F15C201C26E700326ECC /* GameJam2018 */;
+			target = 0DC0F15C201C26E700326ECC /* LoveLikeTheWind */;
 			targetProxy = 0DC0F183201C26E700326ECC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -440,9 +436,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 633EJJ7K44;
-				INFOPLIST_FILE = GameJam2018/Info.plist;
+				INFOPLIST_FILE = LoveLikeTheWind/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = safetreakapp.GameJam2018;
+				PRODUCT_BUNDLE_IDENTIFIER = safetreakapp.LoveLikeTheWind;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -455,9 +451,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 633EJJ7K44;
-				INFOPLIST_FILE = GameJam2018/Info.plist;
+				INFOPLIST_FILE = LoveLikeTheWind/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = safetreakapp.GameJam2018;
+				PRODUCT_BUNDLE_IDENTIFIER = safetreakapp.LoveLikeTheWind;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -471,13 +467,13 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 633EJJ7K44;
-				INFOPLIST_FILE = GameJam2018Tests/Info.plist;
+				INFOPLIST_FILE = LoveLikeTheWindTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = safetreakapp.GameJam2018Tests;
+				PRODUCT_BUNDLE_IDENTIFIER = safetreakapp.LoveLikeTheWindTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GameJam2018.app/GameJam2018";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LoveLikeTheWind.app/LoveLikeTheWind";
 			};
 			name = Debug;
 		};
@@ -488,13 +484,13 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 633EJJ7K44;
-				INFOPLIST_FILE = GameJam2018Tests/Info.plist;
+				INFOPLIST_FILE = LoveLikeTheWindTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = safetreakapp.GameJam2018Tests;
+				PRODUCT_BUNDLE_IDENTIFIER = safetreakapp.LoveLikeTheWindTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GameJam2018.app/GameJam2018";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LoveLikeTheWind.app/LoveLikeTheWind";
 			};
 			name = Release;
 		};
@@ -504,13 +500,13 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 633EJJ7K44;
-				INFOPLIST_FILE = GameJam2018UITests/Info.plist;
+				INFOPLIST_FILE = LoveLikeTheWindUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = safetreakapp.GameJam2018UITests;
+				PRODUCT_BUNDLE_IDENTIFIER = safetreakapp.LoveLikeTheWindUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = GameJam2018;
+				TEST_TARGET_NAME = LoveLikeTheWind;
 			};
 			name = Debug;
 		};
@@ -520,20 +516,20 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 633EJJ7K44;
-				INFOPLIST_FILE = GameJam2018UITests/Info.plist;
+				INFOPLIST_FILE = LoveLikeTheWindUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = safetreakapp.GameJam2018UITests;
+				PRODUCT_BUNDLE_IDENTIFIER = safetreakapp.LoveLikeTheWindUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = GameJam2018;
+				TEST_TARGET_NAME = LoveLikeTheWind;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0DC0F158201C26E700326ECC /* Build configuration list for PBXProject "GameJam2018" */ = {
+		0DC0F158201C26E700326ECC /* Build configuration list for PBXProject "LoveLikeTheWind" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0DC0F189201C26E700326ECC /* Debug */,
@@ -542,7 +538,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0DC0F18B201C26E700326ECC /* Build configuration list for PBXNativeTarget "GameJam2018" */ = {
+		0DC0F18B201C26E700326ECC /* Build configuration list for PBXNativeTarget "LoveLikeTheWind" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0DC0F18C201C26E700326ECC /* Debug */,
@@ -551,7 +547,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0DC0F18E201C26E700326ECC /* Build configuration list for PBXNativeTarget "GameJam2018Tests" */ = {
+		0DC0F18E201C26E700326ECC /* Build configuration list for PBXNativeTarget "LoveLikeTheWindTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0DC0F18F201C26E700326ECC /* Debug */,
@@ -560,7 +556,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0DC0F191201C26E700326ECC /* Build configuration list for PBXNativeTarget "GameJam2018UITests" */ = {
+		0DC0F191201C26E700326ECC /* Build configuration list for PBXNativeTarget "LoveLikeTheWindUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0DC0F192201C26E700326ECC /* Debug */,

@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:GameJam2018.xcodeproj">
+      location = "self:/Users/katherinebrennan/Projects/love-like-the-wind/LoveLikeTheWind.xcodeproj">
    </FileRef>
 </Workspace>
