@@ -16,6 +16,9 @@
 		0DC0F17C201C26E700326ECC /* LoveLikeTheWindTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC0F17B201C26E700326ECC /* LoveLikeTheWindTests.swift */; };
 		0DC0F187201C26E700326ECC /* LoveLikeTheWindUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC0F186201C26E700326ECC /* LoveLikeTheWindUITests.swift */; };
 		0DC0F195201D0E5A00326ECC /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 0DC0F194201D0E5A00326ECC /* .gitignore */; };
+		0DC0F197201D517B00326ECC /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0DC0F196201D517B00326ECC /* music.mp3 */; };
+		0DC0F199201D5BDF00326ECC /* Floor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC0F198201D5BDF00326ECC /* Floor.swift */; };
+		0DC0F19D201D673E00326ECC /* BackgroundNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC0F19C201D673E00326ECC /* BackgroundNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		0DC0F186201C26E700326ECC /* LoveLikeTheWindUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoveLikeTheWindUITests.swift; sourceTree = "<group>"; };
 		0DC0F188201C26E700326ECC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0DC0F194201D0E5A00326ECC /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		0DC0F196201D517B00326ECC /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = music.mp3; path = ../../../Downloads/music.mp3; sourceTree = "<group>"; };
+		0DC0F198201D5BDF00326ECC /* Floor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Floor.swift; sourceTree = "<group>"; };
+		0DC0F19C201D673E00326ECC /* BackgroundNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +108,7 @@
 		0DC0F15F201C26E700326ECC /* LoveLikeTheWind */ = {
 			isa = PBXGroup;
 			children = (
+				0DC0F196201D517B00326ECC /* music.mp3 */,
 				0DC0F160201C26E700326ECC /* AppDelegate.swift */,
 				0DC0F166201C26E700326ECC /* GameScene.swift */,
 				0DC0F168201C26E700326ECC /* GameViewController.swift */,
@@ -109,6 +116,8 @@
 				0DC0F16D201C26E700326ECC /* Assets.xcassets */,
 				0DC0F16F201C26E700326ECC /* LaunchScreen.storyboard */,
 				0DC0F172201C26E700326ECC /* Info.plist */,
+				0DC0F198201D5BDF00326ECC /* Floor.swift */,
+				0DC0F19C201D673E00326ECC /* BackgroundNode.swift */,
 			);
 			path = LoveLikeTheWind;
 			sourceTree = "<group>";
@@ -238,6 +247,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DC0F197201D517B00326ECC /* music.mp3 in Resources */,
 				0DC0F195201D0E5A00326ECC /* .gitignore in Resources */,
 				0DC0F16C201C26E700326ECC /* Main.storyboard in Resources */,
 				0DC0F16E201C26E700326ECC /* Assets.xcassets in Resources */,
@@ -266,9 +276,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DC0F199201D5BDF00326ECC /* Floor.swift in Sources */,
 				0DC0F167201C26E700326ECC /* GameScene.swift in Sources */,
 				0DC0F169201C26E700326ECC /* GameViewController.swift in Sources */,
 				0DC0F161201C26E700326ECC /* AppDelegate.swift in Sources */,
+				0DC0F19D201D673E00326ECC /* BackgroundNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

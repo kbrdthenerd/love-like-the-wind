@@ -3,10 +3,6 @@ import GameplayKit
 
 class GameScene: SKScene {
     
-    //First we declare all of our Gestures...
-    
-    //swipes
-    
     let swipeRightRec = UISwipeGestureRecognizer()
     let swipeLeftRec = UISwipeGestureRecognizer()
     let swipeUpRec = UISwipeGestureRecognizer()
@@ -17,28 +13,52 @@ class GameScene: SKScene {
     let left = SKAction.moveBy(x: -64, y: 0, duration: 2)
     let up = SKAction.moveBy(x: 0, y: 64, duration: 2)
     let down = SKAction.moveBy(x: 0, y: -64, duration: 2)
-    
-    //rotate
-    
-    let rotateRec = UIRotationGestureRecognizer()
-    
-    //taps
-    
-    let tapRec = UITapGestureRecognizer()
-    let tapRec2 = UITapGestureRecognizer()
-    let player = SKSpriteNode(imageNamed: "sweet_letter")
 
+    
+    let player = SKSpriteNode(imageNamed: "sweet_letter")
+    let lover1 = SKSpriteNode(imageNamed: "person1")
+    let lover2 = SKSpriteNode(imageNamed: "person2")
+    var background = SKSpriteNode(imageNamed: "background")
+    
+    var backgroundMusic: SKAudioNode!
+    
+    private let backgroundNode = BackgroundNode()
+
+    override func sceneDidLoad() {
+        backgroundNode.setup(size: size)
+        addChild(backgroundNode)
+    }
     
     
     
     override func didMove(to view: SKView) {
+      
+        if let musicURL = Bundle.main.url(forResource: "music", withExtension: "mp3") {
+            backgroundMusic = SKAudioNode(url: musicURL)
+            addChild(backgroundMusic)
+        }
+    
+        self.physicsWorld.gravity = CGVector(dx: 0, dy: -0.03);
         
-        backgroundColor = SKColor.blue
-        // 3
+        background.position = CGPoint(x: size.width * 0.5, y: size.height * 0.5)
+        background.size.width = self.size.width
+        background.size.height = self.size.height
+        background.zPosition = -1;
+        self.addChild(background)
+        
         player.setScale(0.1)
         player.position = CGPoint(x: size.width * 0.1, y: size.height * 0.5)
-        // 4
-        addChild(player)
+        player.physicsBody = SKPhysicsBody(rectangleOf: player.size)
+        self.addChild(player)
+        
+        lover1.setScale(0.12)
+        lover1.position = CGPoint(x: size.width * 0.05, y: size.height * 0.25)
+        self.addChild(lover1)
+        
+    
+        lover2.setScale(0.12)
+        lover2.position = CGPoint(x: size.width * 0.96, y: size.height * 0.20)
+        self.addChild(lover2)
 
         
         
@@ -60,32 +80,8 @@ class GameScene: SKScene {
         swipeDownRec.direction = .down
         self.view!.addGestureRecognizer(swipeDownRec)
         
-        //notice the function this calls has (_:) after it because we are passing in info about the gesture itself (the sender)
-        
-        rotateRec.addTarget(self, action: #selector (GameScene.rotatedView (_:) ))
-        self.view!.addGestureRecognizer(rotateRec)
-        
-        
-        // again notice (_:), we'll need this to find out where the tap occurred.
-        
-        tapRec.addTarget(self, action:#selector(GameScene.tappedView(_:) ))
-        tapRec.numberOfTouchesRequired = 1
-        tapRec.numberOfTapsRequired = 1
-        self.view!.addGestureRecognizer(tapRec)
-        
-        
-        tapRec2.addTarget(self, action:#selector(GameScene.tappedView2(_:) ))
-        tapRec2.numberOfTouchesRequired = 1
-        tapRec2.numberOfTapsRequired = 2  //2 taps instead of 1 this time
-        self.view!.addGestureRecognizer(tapRec2)
-        
-        
-        
-        
         
     }
-    
-    //the functions that get called when swiping...
     
     @objc func swipedRight() {
         player.run(right)
@@ -109,91 +105,6 @@ class GameScene: SKScene {
         player.run(down)
 
         print("Down")
-    }
-    
-    
-    // what gets called when there's a single tap...
-    
-    //notice the sender is a parameter. This is why we added (_:) that part to the selector earlier
-    
-    @objc func tappedView(_ sender:UITapGestureRecognizer) {
-        
-        let point:CGPoint = sender.location(in: self.view)
-        
-        print("Single tap")
-        
-        print(point)
-        
-    }
-    
-    // what gets called when there's a double tap...
-    
-    //notice the sender is a parameter. This is why we added (_:) that part to the selector earlier
-    
-    @objc func tappedView2(_ sender:UITapGestureRecognizer) {
-        
-        let point:CGPoint = sender.location(in: self.view)
-        
-        print("Double tap")
-        
-        print(point)
-        
-    }
-    
-    //what gets called when there's a rotation gesture
-    //notice the sender is a parameter. This is why we added (_:) that part to the selector earlier
-    
-    @objc func rotatedView(_ sender:UIRotationGestureRecognizer) {
-        
-        if (sender.state == .began) {
-            
-            print("rotation began")
-            
-        }
-        if (sender.state == .changed) {
-            
-            print("rotation changed")
-            
-            //you could easily make any sprite's rotation equal this amount like so...
-            //thePlayer.zRotation = -sender.rotation
-            
-            //convert rotation to degrees...
-            let rotateAmount = Measurement(value: Double(sender.rotation), unit: UnitAngle.radians).converted(to: .degrees).value
-            
-            print("\(rotateAmount) degreess" )
-            
-            
-            
-        }
-        if (sender.state == .ended) {
-            
-            print("rotation ended")
-            
-            
-        }
-        
-        
-    }
-    
-    func removeAllGestures(){
-        
-        //if you need to remove all gesture recognizers with Swift you can do this....
-        
-        for gesture in (self.view?.gestureRecognizers)! {
-            
-            self.view?.removeGestureRecognizer(gesture)
-        }
-        
-        //this is good to do before a SKScene transitions to another SKScene.
-        
-        
-    }
-    func removeAGesture()
-    {
-        
-        //To remove a single gesture you can use...
-        
-        self.view?.removeGestureRecognizer(swipeUpRec)
     }
     
 }
