@@ -1,7 +1,7 @@
 import SpriteKit
 import GameplayKit
 
-class GameScene: SKScene {
+class GameScene: SKScene, SKPhysicsContactDelegate {
     
     let swipeRightRec = UISwipeGestureRecognizer()
     let swipeLeftRec = UISwipeGestureRecognizer()
@@ -32,6 +32,8 @@ class GameScene: SKScene {
     
     
     override func didMove(to view: SKView) {
+        self.physicsWorld.contactDelegate = self
+
       
         if let musicURL = Bundle.main.url(forResource: "music", withExtension: "mp3") {
             backgroundMusic = SKAudioNode(url: musicURL)
@@ -49,7 +51,10 @@ class GameScene: SKScene {
         player.setScale(0.1)
         player.position = CGPoint(x: size.width * 0.1, y: size.height * 0.5)
         player.physicsBody = SKPhysicsBody(rectangleOf: player.size)
+        player.physicsBody?.contactTestBitMask = 1
+
         self.addChild(player)
+        
         
         lover1.setScale(0.12)
         lover1.position = CGPoint(x: size.width * 0.05, y: size.height * 0.25)
@@ -58,6 +63,9 @@ class GameScene: SKScene {
     
         lover2.setScale(0.12)
         lover2.position = CGPoint(x: size.width * 0.96, y: size.height * 0.20)
+        lover2.physicsBody = SKPhysicsBody(rectangleOf: lover2.size)
+        lover2.physicsBody?.contactTestBitMask = 1
+
         self.addChild(lover2)
 
         
@@ -79,6 +87,15 @@ class GameScene: SKScene {
         swipeDownRec.addTarget(self, action: #selector(GameScene.swipedDown) )
         swipeDownRec.direction = .down
         self.view!.addGestureRecognizer(swipeDownRec)
+        
+        
+    }
+    
+    func didBegin(_ contact: SKPhysicsContact) {
+        
+        print("didBegin(contact:))")
+        
+
         
         
     }
